@@ -9,8 +9,15 @@
     <h1>Look at the URL bar!</h1>
     <script src="../dist/index.js"></script>
     <script>
-        let m = new URLMotion();
-        console.log(m)
+        window.addEventListener("load", () => {
+            console.log(window.PredefinedURLMotions)
+            let m = new URLMotion(PredefinedURLMotions.threeDots());
+            m.start();
+
+            setTimeout(() => {
+                m.stop()
+            }, 10000);
+        })
     </script>
 </body>
 </html>
