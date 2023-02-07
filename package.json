@@ -1,6 +1,6 @@
 {
     "name": "url-motion",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "Animate your browser url and make your website 1000 times more attractive.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
