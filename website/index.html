@@ -5,18 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My URL bar is changing?!?!?!?</title>
+    <style>
+        body {
+            width: 30%;
+        }
+
+        p {
+            white-space: break-spaces;
+        }
+    </style>
 </head>
 <body>
-    <h1>Look at the URL bar! <a href="https://github.com/mauro-balades/url-motion" target="_blank">source</a></h1>
+    <br />
+    <pre>
+| ||~)|    _ _  _ _|_. _  _    ===========^
+|_||~\|_  | | |(_) | |(_)| |        
+    </pre>
+    <p>Animate your browser url and make your website 1000 times more attractive. The way URL motion works </p>
+    <ul>
+        <li>Press the "start" button and watch the URL animate</li>
+    </ul>
+    <div style="display: flex; align-items: center;">
+        <p onclick="window.m.start()" style="text-decoration: underline; cursor: pointer;">Start</p>
+        <p style="margin: 0 5px;">~</p>
+        <p onclick="window.m.stop()" style="text-decoration: underline; cursor: pointer;">Stop</p>
+        <p style="margin: 0 5px;">~</p>
+        <a href="https://github.com/mauro-balades/url-motion" target="_blank">source</a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/url-motion@latest/dist/index.js"></script>
     <script>
         window.addEventListener("load", () => {
-            let m = new URLMotion(PredefinedURLMotions.aesthetic(), 500);
-            m.start();
-
-            setTimeout(() => {
-                m.stop()
-            }, 10000);
+            window.m = new URLMotion(PredefinedURLMotions.aesthetic(), 500);
         })
     </script>
 </body>
